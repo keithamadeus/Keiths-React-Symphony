@@ -2,16 +2,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
+import {Footer, Header, Welcome} from './components'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Header>
+        <li><a href='#'>Nav 1</a></li>
+        <li><a href='#'>Nav 2</a></li>
+      </Header>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -33,6 +34,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Footer />
     </>
   )
 }
