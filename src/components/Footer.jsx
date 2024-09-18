@@ -1,5 +1,5 @@
 
-export function Footer(props) {
+export default function Footer(props) {
   return (
     <footer>
       <nav>
