@@ -13,6 +13,11 @@ body {
   height: 100%;
 }
 
+ul.navbar-nav > a.nav-link.active {
+  background-color: #444;
+  box-shadow: 0 0 5px 5px #444;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
