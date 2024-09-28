@@ -3,13 +3,7 @@ export default function AboutPage() {
   return (
     <div className="container pt-4">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        tenetur maiores, dolor iusto dolorum ullam, natus deleniti blanditiis
-        impedit suscipit sed magnam alias in, repellat expedita hic explicabo
-        architecto soluta. About us Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Velit voluptate exercitationem quaerat pariatur
-        mollitia, excepturi, voluptatem eveniet a dolor nobis ex veniam totam
-        nostrum temporibus ad omnis nam rerum eligendi.
+      I am a passionate and hard working Engineer and Leader. I have a thirst for learning new technology and finding creative ways to solve problems. I love building beautiful and reusable code. I thrive working with a team to achieve success together. I have excellent interpersonal communication and organizational skills. I am excited and ready to continue to learn and sharpen the knowledge I am bringing to the table, because with Software Development you never finish learning.
       </p>
       <section className="features-icons bg-light text-center m-4">
         <div className="container">

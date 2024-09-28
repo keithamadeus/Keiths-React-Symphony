@@ -53,3 +53,6 @@ ul.navbar-nav > a.nav-link.active {
 .read-the-docs {
   color: #888;
 }
+.hero-banner {
+background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+}

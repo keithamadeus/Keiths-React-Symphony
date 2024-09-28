@@ -1,21 +1,11 @@
-import { NavLink } from 'react-router-dom';
+// Bringing in the required component from 'react-router-dom' for linking between pages
+// import { Link } from 'react-router-dom';
+import Navigation from './Navigation';
 
-export default function Header(props) {
+export default function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <div className="collapse navbar-collapse justify-content-between px-4">
-          <ul className="navbar-nav">
-            <NavLink className="nav-link" to={`/home`}>Keith</NavLink>
-          </ul>
-          <ul className="navbar-nav">
-            <NavLink className="nav-link" to={`/`}>About</NavLink>
-            <NavLink className="nav-link" to={`/profile`}>Profile</NavLink>
-            <NavLink className="nav-link" to={`/resume`}>Resume</NavLink>
-            <NavLink className="nav-link" to={`/contact`}>Contact</NavLink>
-          </ul>
-        </div>
-      </nav>
+        <Navigation />
     </header>
   );
 }
