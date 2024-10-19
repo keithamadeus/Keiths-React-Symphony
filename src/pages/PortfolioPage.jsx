@@ -30,10 +30,10 @@ return (
                           <Card.Title>{project.title}</Card.Title>
                           <Card.Text>{project.text}</Card.Text>
                           <Link to={project.deployedSiteLink}>
-                            <Button variant="primary" class="btn btn-outline-primary" >Deployed Site</Button>
+                            <Button variant="primary" className="btn btn-outline-primary" >Deployed Site</Button>
                           </Link>
                           <Link to={project.gitHubRepoLink}>
-                            <Button variant="info" class="btn btn-outline-info btn-sm">Git Hub Repo</Button>
+                            <Button variant="info" className="btn btn-outline-info btn-sm">Git Hub Repo</Button>
                           </Link>
                       </Card.Body>
                   </Card>
