@@ -4,15 +4,20 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
+import placeHolderImg from '../assets/images/Coming-Soon.jpg';
+import socialSyncImg from '../assets/images/SocialSync.gif';
+import weatherDashboardImg from '../assets/images/WeatherDashboard.jpg';
+
 
 export default function PortfolioPage() {
   const projects = [
-    { title: 'Project 1', text: 'Description for project 1', imgSrc: 'holder.js/100px180' },
-    { title: 'Project 2', text: 'Description for project 2', imgSrc: 'holder.js/100px180' },
-    { title: 'Project 3', text: 'Description for project 3', imgSrc: 'holder.js/100px180' },
-    { title: 'Project 4', text: 'Description for project 4', imgSrc: 'holder.js/100px180' },
-    { title: 'Project 5', text: 'Description for project 5', imgSrc: 'holder.js/100px180' },
-    { title: 'Project 6', text: 'Description for project 6', imgSrc: 'holder.js/100px180' },
+    { title: 'SocialSync', text: 'Your go-to platform for planning community events.', imgSrc: socialSyncImg, deployedSiteLink: 'https://socialsync-kjg6.onrender.com', gitHubRepoLink: 'https://github.com/ASgithub11/SocialSync' },
+    { title: 'Weather Dashboard', text: 'Easy access to weather conditions for planning trips or daily activities', imgSrc: weatherDashboardImg, deployedSiteLink: 'https://keiths-weather-dashboard.onrender.com', gitHubRepoLink: 'https://github.com/keithamadeus/Keiths-Weather-Dashboard/tree/main' },
+    { title: 'Project 3', text: 'Description for project 3', imgSrc: placeHolderImg, deployedSiteLink: '/project3', gitHubRepoLink: '/project2' },
+    { title: 'Project 4', text: 'Description for project 4', imgSrc: placeHolderImg, deployedSiteLink: '/project4', gitHubRepoLink: '/project2' },
+    { title: 'Project 5', text: 'Description for project 5', imgSrc: placeHolderImg, deployedSiteLink: '/project5', gitHubRepoLink: '/project2' },
+    { title: 'Project 6', text: 'Description for project 6', imgSrc: placeHolderImg, deployedSiteLink: '/project6', gitHubRepoLink: '/project2' },
 ];
 return (
   <Container>
@@ -24,7 +29,12 @@ return (
                       <Card.Body>
                           <Card.Title>{project.title}</Card.Title>
                           <Card.Text>{project.text}</Card.Text>
-                          <Button variant="primary">Go somewhere</Button>
+                          <Link to={project.deployedSiteLink}>
+                            <Button variant="primary" class="btn btn-outline-primary" >Deployed Site</Button>
+                          </Link>
+                          <Link to={project.gitHubRepoLink}>
+                            <Button variant="info" class="btn btn-outline-info btn-sm">Git Hub Repo</Button>
+                          </Link>
                       </Card.Body>
                   </Card>
               </Col>
@@ -32,17 +42,4 @@ return (
       </Row>
   </Container>
 );
-      // return (
-      //   <Card style={{ width: '18rem' }}>
-      //     <Card.Img variant="top" src="holder.js/100px180" />
-      //     <Card.Body>
-      //       <Card.Title>Card Title</Card.Title>
-      //       <Card.Text>
-      //         Some quick example text to build on the card title and make up the
-      //         bulk of the card&apos;s content.
-      //       </Card.Text>
-      //       <Button variant="primary">Go somewhere</Button>
-      //     </Card.Body>
-      //   </Card>
-      // );
 }
