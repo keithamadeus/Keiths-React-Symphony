@@ -1,215 +1,92 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Keiths-React-Symphony
 
-Currently, two official plugins are available:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# 20 React: React Portfolio
+## Description
 
-## Your Task
+[React Symphony ](https://keiths-react-symphony.netlify.app/)
+[GitHub Repository](https://github.com/keithamadeus/Keiths-React-Symphony)
 
-Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
 
-Your task is to create a portfolio using your new React skills, which will help set you apart from other developers whose portfolios don’t use the latest technologies.
+Embark on a digital journey through my personal universe with this portfolio built using cutting-edge React and streamlined by Vite. I'm thrilled to share this space where creativity meets code, now gracefully hosted by Netlify.
+  
 
-You’ll deploy this application to Netlify. Follow the instructions in the Git Guide or consult the [Docs on Netlify](https://vitejs.dev/guide/static-deploy.html#netlify) to create a build that you can deploy.
 
-## User Story
 
-```md
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
-```
+  
 
-## Acceptance Criteria
+## Table of Contents
 
-```md
-GIVEN a single-page application portfolio for a web developer
-WHEN I load the portfolio
-THEN I am presented with a page containing a header, a section for content, and a footer
-WHEN I view the header
-THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio
-WHEN I view the navigation titles
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted
-WHEN I click on a navigation title
-THEN the browser URL changes and I am presented with the corresponding section below the navigation and that title is highlighted
-WHEN I load the portfolio the first time
-THEN the About Me title and section are selected by default
-WHEN I am presented with the About Me section
-THEN I see a recent photo or avatar of the developer and a short bio about them
-WHEN I am presented with the Portfolio section
-THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repositories
-WHEN I am presented with the Contact section
-THEN I see a contact form with fields for a name, an email address, and a message
-WHEN I move my cursor out of one of the form fields without entering text
-THEN I receive a notification that this field is required
-WHEN I enter text into the email address field
-THEN I receive a notification if I have entered an invalid email address
-WHEN I am presented with the Resume section
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies
-WHEN I view the footer
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter)
-```
+- [Installation](#installation)
 
-## Mock-Up
+- [Usage](#usage)
 
-The following animation shows the web application's appearance and functionality:
+- [Learning Points](#learning-points)
 
-![User clicks through About Me, Portfolio, Resume, and Contact sections on the webpage and enters information on Contact page.](./Assets/20-react-homework-demo-01.gif)
+- [Author Information](#author-information)
 
-## Getting Started
+- [License](#license)
 
-You’ll use `vite` to build your portfolio, which will include the following:
+  
 
-* A single `Header` component that appears on multiple pages
+## Installation
+Installation Setup Steps:
+Install dependencies with npm install.
+Configuration: Update scripts in package.json to include "start": "vite".
+  
 
-* A single `Navigation` component within the header that will use `Link` components from `react-router-dom` to conditionally render the different sections of your portfolio
+## Usage
 
-* A single `Project` component that will be used multiple times in the Portfolio section
+Project Highlights
 
-* A single `Footer` component that appears on multiple pages
+-   Architecture: Crafted with React, this portfolio is not just a showcase but a testament to clean, efficient coding practices tailored with a personal flair.    
+-   Sections:
+    
+    -   About Me: Dive into my story, where I blend my passion for technology with personal anecdotes.
+        
+    -   Portfolio: Featuring six of my most engaging projects. Each project is accompanied by vibrant images, titles, and clickable links to live demos and their GitHub repositories.
+        
+    -   Contact: An interactive form where you can drop me a line. Currently, I'm tinkering with validation to ensure only meaningful messages get through (watch this space!).
+        
+    -   Resume: A direct download link to my resume, alongside a concise list of my tech proficiencies.
+        
+-   Design Philosophy: Adopting a mobile-first approach, I've prioritized readability and user experience, ensuring that whether you're on a smartphone or a desktop, my site adapts seamlessly.
+    
+-   Interactions: The navigation menu is dynamic, with URL changes reflecting your journey through the site. Start your adventure at the 'About Me' section, and as you explore, notice how the active section lights up, guiding your way.
+    
+-   Connectivity: In the spirit of staying connected, my footer isn't just a footer; it's a gateway to my professional networks. Click through to my GitHub, LinkedIn, or fire off an email directly from Gmail.
+    
+This portfolio isn't just about displaying projects; it's about encapsulating my personality and professional journey in a space that invites exploration. I'm continuously refining this digital home of mine, ensuring every visit feels like catching up with an old friend.  
 
-**Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
+Feel free to fork, comment, or suggest – after all, in the vast digital cosmos, collaboration is the key to innovation.
 
-### When you would like to scaffold a new `vite` application on your own, follow these steps
+  
 
-1. In the command line, navigate to the desired parent folder and run `npm create vite`.
+## Learning Points
 
-    * 🔑 *Note*: This command will automatically create a sub-folder which will house your React application; you do not need to perform a `mkdir` command to create one manually.
+-   EmailJS Integration: Initially, integrating the EmailJS node module presented unforeseen challenges due to its specific requirements. This hiccup is on my roadmap for resolution in the upcoming deployment.
+    
+-   Portfolio 2.0: On the horizon, I'm crafting a sequel to this portfolio with the added flair of dynamic 3D elements. Stay tuned for a visual and interactive upgrade that's currently under wraps.
 
-2. Enter the desired name of your new project folder.
+  
 
-3. From the first list of options, select your framework; for our activities in class, we'll be using `React`.
+## Author Information
 
-4. From the second list of options, select your variant; for our activities in class, we'll be using `JavaScript`.
+Keith Williams
 
-5. `cd` into your newly created project folder and run `npm install`.
+  
 
-    * In later activities we'll add additional NPM packages to our `vite` apps such as 'bootstrap', 'dotenv', and 'axios'.
+## License
 
-6. Run `npm dev`/`npm run dev` and navigate to the prompted URL to see your app.
+This project is licensed under the MIT license.
 
-### Further customization (Recommended)
+https://opensource.org/licenses/MIT
 
-1. Navigate to your `package.json` and modify the `scripts` object so that it looks like this example:
+  
 
-```json
-  "scripts": {
-    "dev": "vite",
-    "start": "vite",
-    "build": "vite build",
-    "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-  },
-```
+## Questions
 
-* Note the addition of the `"start": "vite"` script.
+If you have any questions, you can reach me at keith.amadeus.williams@gmail.com.
 
-2. Navigate to the `vite.config.js` file and edit the export object so that it looks like this example:
-
-```js
-export default defineConfig({
-  plugins: [react()],
-  server: {
-    port: 3000,
-    open: true
-  }
-})
-```
-
-### Projects
-
-For each project that is featured in your portfolio, include the following:
-
-* An image of the deployed application (either a short animated GIF or screenshot)
-
-* The title of the project
-
-* A link to the deployed application
-
-* A link to the corresponding GitHub repository
-
-### Design
-
-As with the previous portfolio Challenge, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
-
-* Use mobile-first design.
-
-* Choose a color palette that distinguishes your site from the default Bootstrap theme and unstyled HTML sites. Refer to resources like [Coolors](https://coolors.co/) or another color scheme generator to help you create something that will stand out.
-
-* Ensure that the font size is large enough to read and that the colors don't cause eye strain.
-
-* Consider using animations and React component libraries. Note that this will not affect your grade, but it might impact how potential employers gauge your knowledge.
-
-## Grading Requirements
-
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
-
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the preceding acceptance criteria plus the following:
-
-  * Application must use React to render content.
-
-  * Application has a single `Header` component that appears on multiple pages, with a `Navigation` component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
-
-  * Application has a single `Project` component that’s used multiple times in the Portfolio section.
-
-  * Application has a single `Footer` component that appears on multiple pages.
-
-  * Application must be deployed to Netlify.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository contains application code.
-
-### Application Quality: 15%
-
-* User experience is intuitive and easy to navigate.
-
-* User interface style is clean and polished.
-
-* Application uses a color scheme other than the default Bootstrap color palette.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains high-quality README file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a README that describes the project.
-
----
-
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+You can also visit my GitHub profile at [keithamadeus](https://github.com/keithamadeus).
