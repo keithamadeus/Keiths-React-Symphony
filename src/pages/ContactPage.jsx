@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 export default function ContactPage() {
 
@@ -32,20 +33,31 @@ export default function ContactPage() {
     setMessageValid(Boolean(e.target.value));
   }
 
-  function handleFormSubmit(e) {
-    e.preventDefault();
-    alert(
-      `No form backend yet, but you submitted
-      name=${name}
-      email=${email}
-      message=${message}`
-    );
+  function handleFormSubmit(event) {
+    event.preventDefault();
+
+    if (name && email && message && emailValidFormat) {
+      emailjs.send('service_h8lzrin', 'template_ge91f4r', {
+        name,
+        email,
+        message,
+      }, 'TFFZTSYzadBHVHAxd')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+      }, (error) => {
+        console.log('FAILED...', error);
+        alert('Failed to send message. Please try again later.');
+      });
+    } else {
+      alert('Please fill out all fields correctly.');
+    }
   }
 
   function updateValidation() {
-    handleNameChange({"target":{"value":name}})
-    handleEmailChange({"target":{"value":email}})
-    handleMessageChange({"target":{"value":message}})
+    handleNameChange({ target: { value: name } });
+    handleEmailChange({ target: { value: email } });
+    handleMessageChange({ target: { value: message } });
   }
 
   return (
