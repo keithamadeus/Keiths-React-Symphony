@@ -1,5 +1,5 @@
 // import React from 'react';
-import resumePDF from '../assets/documents/Keith-Williams-Resume-8-24.pdf';
+import resumePDF from '../assets/documents/KeithWilliams_Resume_2025.pdf';
 
 export default function ResumePage() {
   return (
